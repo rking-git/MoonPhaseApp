@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="MoonPhaseApp.MainPage"  
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Date Label -->
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="DateLabel"  
+                       Text="Date"  
+                       Style="{StaticResource Headline}"  
+                       SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <!-- Phase Label -->
+            <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="PhaseLabel"  
+                       Text="Phase"  
+                       Style="{StaticResource Headline}"  
+                       SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <!-- Image -->
+            <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="20" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Image x:Name="MainImage"  
+                       WidthRequest="400"  
+                       HeightRequest="400"
+                       />
+            </Border>
+
+            <!-- Top Row -->
+            <Border Grid.Row="3" Grid.Column="0" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label Text="Illum" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="1" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label Text="Days Left" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="2" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label Text="Dist" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <!-- Bottom Row -->
+            <Border Grid.Row="4" Grid.Column="0" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="IllumLabel" Text="Illum" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <Border Grid.Row="4" Grid.Column="1" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="AgeLabel" Text="Age" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            <Border Grid.Row="4" Grid.Column="2" Stroke="DodgerBlue" StrokeThickness="3" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="DistLabel" Text="Size" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+        </Grid>
+        
+        <!--<VerticalStackLayout  
+            Padding="0"  
+            Spacing="0">
+
+            --><!-- Date Label --><!--
+            <Border Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="DateLabel"  
+                       Text="Date"  
+                       Style="{StaticResource Headline}"  
+                       SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            --><!-- Phase Label --><!--
+            <Border Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Label x:Name="PhaseLabel"  
+                       Text="Phase"  
+                       Style="{StaticResource Headline}"  
+                       SemanticProperties.HeadingLevel="Level1" />
+            </Border>
+
+            --><!-- Image --><!--
+            <Border Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                <Border.Shadow>
+                    <Shadow Brush="DodgerBlue" Radius="20" Opacity="0.8" Offset="1,0" />
+                </Border.Shadow>
+                <Image x:Name="MainImage"  
+                       WidthRequest="400"  
+                       HeightRequest="400"
+                       />
+            </Border>
+
+            --><!-- Grid with glowing borders per cell --><!--
+            <HorizontalStackLayout  
+                Spacing="10"  
+                HorizontalOptions="Center">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    --><!-- Top Row --><!--
+                    <Border Grid.Row="0" Grid.Column="0" Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                        <Border.Shadow>
+                            <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                        </Border.Shadow>
+                        <Label Text="Illum" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="1" Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                        <Border.Shadow>
+                            <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                        </Border.Shadow>
+                        <Label Text="Days" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="2" Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                        <Border.Shadow>
+                            <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                        </Border.Shadow>
+                        <Label Text="Dist" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+                    </Border>
+
+                    --><!-- Bottom Row --><!--
+                    <Border Grid.Row="1" Grid.Column="0" Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                        <Border.Shadow>
+                            <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                        </Border.Shadow>
+                        <Label x:Name="IllumLabel" Text="Illum" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="1" Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                        <Border.Shadow>
+                            <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                        </Border.Shadow>
+                        <Label x:Name="AgeLabel" Text="Age" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="2" Stroke="DodgerBlue" StrokeThickness="2" BackgroundColor="Transparent">
+                        <Border.Shadow>
+                            <Shadow Brush="DodgerBlue" Radius="15" Opacity="0.8" Offset="1,0" />
+                        </Border.Shadow>
+                        <Label x:Name="DistLabel" Text="Size" Style="{StaticResource Headline}" SemanticProperties.HeadingLevel="Level1" />
+                    </Border>
+                </Grid>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>-->
+    </ScrollView>
+</ContentPage>
