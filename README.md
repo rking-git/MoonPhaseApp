@@ -11,7 +11,7 @@
     <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png" width="140">
 </p>
 
-## Introduction
+## Current Projects
 
 Currently working on multiple apps, this tech demo of a moon phase app is currently being developed using web API data to show accurate information in a pleasing, easy to read free app in order to use the results for market research.
 
